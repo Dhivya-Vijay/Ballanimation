@@ -1,0 +1,35 @@
+#bouncing{
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/31/19/51/alphabet-word-images-1295331_1280.png);
+    background-size: 100%;
+    height: 100px;
+    width: 100px;
+    margin-top: 100px;
+    margin-left: 400px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#ball{
+    margin-left: 400px;
+    margin-top: 300px;
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    position: fixed;
+    bottom: 10px;
+}
+
+@keyframes bounce {
+    from{
+        top: 0px;
+        transform: rotate(180deg);
+        }
+        to{
+            top: 380px;
+        }
+    
+}
